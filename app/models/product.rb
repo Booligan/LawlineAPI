@@ -1,4 +1,4 @@
 class Product < ApplicationRecord
-    belongs_to :user
     has_many :user_products
+    has_many :users, through: :user_products
 end
