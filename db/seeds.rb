@@ -4,7 +4,9 @@
         last_name: Faker::Name.last_name,
         email: Faker::Internet.unique.email
     })
+end
 
+10.times do
     Product.create({
         name: Faker::Coffee.blend_name,
         description: Faker::Coffee.notes,
