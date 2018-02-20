@@ -21,3 +21,18 @@ end
         image: "NO IMAGE AVAILABLE"
     })
 end
+
+# Add products to users
+User.first.products << Product.find_by(id: 1)
+User.first.products << Product.find_by(id: 7)
+User.first.products << Product.find_by(id: 10)
+User.find_by(id: 3).products << Product.find_by(id: 1)
+User.find_by(id: 3).products << Product.find_by(id: 5)
+User.find_by(id: 3).products << Product.find_by(id: 2)
+User.find_by(id: 5).products << Product.find_by(id: 6)
+User.find_by(id: 5).products << Product.find_by(id: 8)
+User.find_by(id: 5).products << Product.find_by(id: 2)
+
+
+
+
