@@ -2,7 +2,7 @@
 
 This application is a simple RESTful API that manages a database of users and products(coffee). Built with Ruby on Rails and MySQL DB.
 
-##Installation
+## Installation
 Follow commands to clone repo and set up the DB.
 
 ```
@@ -12,7 +12,7 @@ rails db:create
 rails db:migrate
 rails db:seed
 ```
-##Usage
+## Usage
 
 The DB is seeded with data created from the FAKER gem. The admin account is: 
 email: admin@lawline.com
@@ -20,7 +20,7 @@ password: '123456789'
 
 We will use this account to navigate through the API.
 
-##Authentication
+## Authentication
 
 To authenticate the user. Send a JSON POST request to http://localhost:3000/api/user_token
 ```
@@ -70,7 +70,7 @@ Product params require :product. Example:
 	}
 }
 
-#License
+# License
 
 Copyright &copy 2018 Alberto Mayanga, SEE [LICENSE](http://https://github.com/Booligan/LawlineAPI/blob/master/LICENSE.md) for more details.
 
