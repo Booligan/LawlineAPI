@@ -12,6 +12,7 @@ gem 'rails', '~> 5.1.5'
 gem 'mysql2'
 gem 'puma', '~> 3.7'
 
+# authentication gems
 gem 'bcrypt', '~> 3.1.7'
 gem 'active_model_serializers'
 gem 'rack-cors'

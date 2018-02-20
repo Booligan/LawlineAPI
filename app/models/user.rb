@@ -10,5 +10,9 @@ class User < ApplicationRecord
     validates_presence_of :last_name
     validates_presence_of :email
     
-    validates :email, uniqueness: true    
+    validates :email, uniqueness: true
+    
+    def add_product(product)
+        self.products << product
+    end
 end
