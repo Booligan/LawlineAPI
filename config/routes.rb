@@ -11,11 +11,8 @@ Rails.application.routes.draw do
         #upload products image
         post 'image' => 'products#image'
 
-        #upload product to requesting user
+        #attach product to requesting user
         post 'add' => 'products#add'
-
-        #remove product to requesting user
-        post 'remove' => 'products#remove'
 
         #remove product to requesting user
         delete 'remove' => 'products#remove'
