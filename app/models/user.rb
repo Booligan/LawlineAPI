@@ -11,7 +11,8 @@ class User < ApplicationRecord
     validates_presence_of :email
     
     validates :email, uniqueness: true
-    
+
+    #instance methods    
     def add_product(product)
         self.products << product
     end
