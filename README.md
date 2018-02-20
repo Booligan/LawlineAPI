@@ -20,25 +20,28 @@ password: '123456789'
 
 We will use this account to navigate through the API.
 
-###Authentication
+##Authentication
 
 To authenticate the user. Send a JSON POST request to http://localhost:3000/api/user_token
+```
 {
 	"auth":{
 		"email":"admin@lawline.com",
 		"password": "123456789"
 	}
 }
+```
 
  A JSON Web token will be returned: 
-
+```
  {
     "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTkxOTY3OTcsInN1YiI6MX0.gWRuJtSG6lRkNI_BcVMrLI5JIFvt2nfixSNuu4NiWyw"
 } 
+```
 
 *NOTE: Your token will be different, and expires after ONE day.*
 
-### Routes
+## Routes
 
 When making requests, you will need to include the Bearer + the JSON web token in the request header.
 
@@ -50,15 +53,15 @@ Value: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTkxOTY3OTcsInN1Y
 ```
 _ROUTES_
 
-Add product: POST - http://localhost:3000/api/products
-Update product: PUT - http://localhost:3000/api/products/{:product_id}
-Delete product: DELETE - http://localhost:3000/api/products/{:product_id}
-Get Product: GET - http://localhost:3000/api/products/{:product_id}
-Upload Product Image: POST - http://localhost:3000/api/products/{:product_id}/image
-List of all products: GET http://localhost:3000/api/products
-Attach product to user: POST - http://localhost:3000/api/products/{:product_id}/add
-Remove product from user: DELETE - http://localhost:3000/api/products/{:product_id}/remove
-List of products attached to user: GET http://localhost:3000/api/users/{:user_id}/products
+Add product: POST - http://localhost:3000/api/products<br />
+Update product: PUT - http://localhost:3000/api/products/{:product_id}<br />
+Delete product: DELETE - http://localhost:3000/api/products/{:product_id}<br />
+Get Product: GET - http://localhost:3000/api/products/{:product_id}<br />
+Upload Product Image: POST - http://localhost:3000/api/products/{:product_id}/image<br />
+List of all products: GET http://localhost:3000/api/products<br />
+Attach product to user: POST - http://localhost:3000/api/products/{:product_id}/add<br />
+Remove product from user: DELETE - http://localhost:3000/api/products/{:product_id}/remove<br />
+List of products attached to user: GET http://localhost:3000/api/users/{:user_id}/products<br />
 
 Product params require :product. Example:
 {
@@ -69,5 +72,5 @@ Product params require :product. Example:
 
 #License
 
-Copyright &copy 2018 Alberto Mayanga, SEE [LICENSE](http://https://github.com/Booligan/Lawline/blob/master/LICENSE.md) for more details.
+Copyright &copy 2018 Alberto Mayanga, SEE [LICENSE](http://https://github.com/Booligan/LawlineAPI/blob/master/LICENSE.md) for more details.
 
