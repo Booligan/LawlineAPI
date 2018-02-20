@@ -8,6 +8,7 @@ Follow commands to clone repo and set up the DB.
 ```
 git clone git@github.com:Booligan/LawlineAPI.git
 cd LawlineAPI
+bundle install
 rails db:create 
 rails db:migrate
 rails db:seed
