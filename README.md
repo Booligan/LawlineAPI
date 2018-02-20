@@ -64,11 +64,13 @@ Remove product from user: DELETE - http://localhost:3000/api/products/{:product_
 List of products attached to user: GET http://localhost:3000/api/users/{:user_id}/products<br />
 
 Product params require :product. Example:
+```
 {
 	"product":{
 		"image":"test_image"
 	}
 }
+```
 
 # License
 
