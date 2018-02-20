@@ -12,6 +12,12 @@ gem 'rails', '~> 5.1.5'
 gem 'mysql2'
 gem 'puma', '~> 3.7'
 
+gem 'bcrypt', '~> 3.1.7'
+gem 'active_model_serializers'
+gem 'rack-cors'
+gem 'knock'
+gem 'jwt'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -23,6 +29,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'faker'
+  gem 'pry'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
